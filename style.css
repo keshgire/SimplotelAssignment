@@ -56,6 +56,11 @@ input {
 section {
   width: 100%;
   height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(236, 87, 152),
+    rgb(249, 249, 100)
+  );
 }
 
 .container {
@@ -74,14 +79,15 @@ section {
   top: 20%;
   left: 10%;
   background-color: rgba(241, 110, 132, 0.7);
-  width: 41%;
+  width: 40%;
   color: white;
   overflow: hidden;
-  padding: 2rem;
+  padding: 3rem;
+  font-family: Arial;
 }
 
 .container-text h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 4px;
   margin-bottom: 0.5rem;
 }
@@ -128,15 +134,16 @@ section {
   text-align: center;
   margin-top: 10px;
   text-transform: capitalize;
-
+  font-family: "Verdana";
   font-weight: 900;
 }
 
 .card p {
   text-align: center;
-  margin-top: 2px;
+  margin-top: 6px;
   padding: 15px;
   font-size: 14px;
+  font-family: sans-serif;
 }
 .card img {
   width: 220px;
@@ -158,13 +165,13 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
-@media screen and (max-width: 912px) {
-  /* .hambarger {
+@media screen and (max-width: 900px) {
+  .hambarger {
     display: block;
     position: absolute;
     left: 30px;
     top: 10px;
-  } */
+  }
   .logo {
     position: absolute;
     top: 12px;
@@ -191,28 +198,28 @@ button {
   nav ul li {
     margin: 40px 0;
   }
-  /* #click:checked ~ ul {
+  #click:checked ~ ul {
     left: 0;
     top: 50px;
     overflow: hidden;
     overflow-y: hidden;
-  } */
+  }
   ul li a {
     color: #111;
     text-transform: capitalize;
     font-size: 22px;
+
     font-weight: 300;
   }
 
-  /* #click {
+  #click {
     display: none;
-  } */
+  }
   section {
     width: 100%;
     height: auto;
   }
   .footer {
-    width: 100%;
     height: auto;
   }
   .container-text {
@@ -240,24 +247,10 @@ button {
 }
 
 @media screen and (max-width: 600px) {
-  .hambarger {
-    display: block;
-    position: absolute;
-    left: 30px;
-    top: 10px;
-  }
-  #click:checked ~ ul {
-    left: 0;
-    top: 50px;
-    overflow: hidden;
-    overflow-y: hidden;
-  }
-  #click {
-    display: none;
-  }
   .container-text {
     top: 30%;
     width: 60%;
+
     padding: 1rem;
   }
 
