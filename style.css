@@ -177,6 +177,9 @@ button {
     left: 30px;
     top: 10px;
   }
+  .hambarger:hover {
+    cursor: pointer;
+  }
   .logo {
     position: absolute;
     top: 12px;
@@ -213,7 +216,6 @@ button {
     color: #111;
     text-transform: capitalize;
     font-size: 22px;
-
     font-weight: 300;
   }
 
@@ -255,7 +257,6 @@ button {
   .container-text {
     top: 30%;
     width: 60%;
-
     padding: 1rem;
   }
 
